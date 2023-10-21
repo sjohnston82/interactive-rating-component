@@ -63,7 +63,7 @@ main {
 .rating-container {
   width: 326px;
   height: 360px;
-  background-color: hsl(215, 21%, 16%);
+  background-color: hsl(215, 21%, 14%);
   border-radius: 17px;
   padding: 24px;
   display: flex;
@@ -80,7 +80,7 @@ main {
   align-items: center;
 }
 
-svg {
+#star {
   scale: 85%;
 }
 
@@ -127,4 +127,78 @@ svg {
 .active {
   background-color: var(--medium-gray);
   color: white;
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  color: white;
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  margin-top: 1.5rem;
+  padding: 1.1rem 0 0.9rem 0;
+  letter-spacing: 2.5px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer; 
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+/*   THANK YOU PAGE    */
+
+.thank-you-container {
+  width: 326px;
+  height: 360px;
+  background-color: hsl(215, 23%, 14%);
+  border-radius: 17px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#thank-you-svg {
+  scale: 89%;
+  margin-top: .275rem;
+  margin-left: 2px;
+}
+
+.rating-message { 
+  background-color: hsl(210, 19%, 18%);
+  border-radius: 999px;
+  width: 168px;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange);
+  font-size: 13px;
+  padding-top: 0.2rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  margin-top: 1.2rem;
+  font-size: 14px;
+  letter-spacing: .1px;
+}
+
+.thank-you-heading {
+  color: white;
+  font-size: 1.56em;
+  padding: 1.28rem 0 0.8rem 0;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-top: .5rem;
+}
+
+.thank-you-text {
+  color: var(--light-gray);
+  letter-spacing: -0.2px;
+  font-size: 14.5px;
+  line-height: 1.5em;
+  text-align: center;
 }
