@@ -16,11 +16,9 @@ for (let i = 0; i < ratingsCircles.length; i++) {
 submitBtn.addEventListener("click", () => {
   const activeRating = document.getElementsByClassName("active")[0];
   if (activeRating) {
-    const url = "http://127.0.0.1:5500/thank-you.html";
+    const url = "https://golden-beijinho-6dce8d.netlify.app//thank-you.html";
     const searchParams = new URLSearchParams(window.location.search);
     searchParams.set("rating", activeRating.id);
     window.location.href = url + "?" + searchParams.toString();
   }
 });
-
-
